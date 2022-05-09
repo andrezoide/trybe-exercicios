@@ -1,0 +1,55 @@
+ol {
+    background-color: yellow;
+}
+
+.par {
+    color: green;
+}
+
+.impar {
+    text-transform: uppercase;
+}
+
+.headers {
+    color: red;
+}
+
+.em {
+    font-size: 40px;
+    border: 1px solid black;
+}
+
+li {
+    font-size: 20px;
+}
+ol li em {
+    font-weight: bolder;
+}
+
+.blue {
+    color: blue;
+}
+
+.java {
+    background-color: pink;
+}
+
+#orange:hover {
+    color: orange;
+    font-weight: bolder;
+}
+
+.green:hover {
+    color: green;
+    font-weight: bolder;
+}
+
+#black:hover {
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+#yellow:hover {
+    color: yellow;
+    font-weight: bolder;
+}
