@@ -1,129 +1,164 @@
-//exercicio 1 area do triangulo
- const base = 5;
-let height = 8;
+//exercicio 1 area do triangulo - refatorado com function:
+function calcAreaTriangulo(base, altura){
+    let area = base * altura;
+    return area
+}
+console.log(calcAreaTriangulo(5, 8));
 
-const area = base * height;
-console.log(area)
-
-const perimeter = base + height + height;
-console.log(perimeter)
+function calcPerimetroTriangulo(base, altura){
+    let perimeter = base + altura + altura;
+    return perimeter;
+}
+console.log(calcPerimetroTriangulo(3,2));
 
 //exercicio 2 if / else
-const notaPessoa = 80;
-if(notaPessoa >= 80){
-    console.log('voce foi aprovado');}
-
-else if(notaPessoa < 80 && notaPessoa >= 60){
-    console.log('voce esta na nossa lista de espera');
-} 
-else if(notaPessoa < 60){
-    console.log('reprovado');
+function aprovadoOuReprovado(notaPessoa){
+    if(notaPessoa >= 80){
+        notaPessoa = 'aprovado'
+        return notaPessoa
+    }
+    else if(notaPessoa < 80 && notaPessoa >= 60){
+        notaPessoa = 'lista de espera'
+        return notaPessoa
+    } 
+    else if(notaPessoa < 60){
+        notaPessoa = 'reprovado'
+        return notaPessoa
+    }
 }
+console.log(aprovadoOuReprovado(26));
 
 //exercicio 3 operadores logicos
-const currentHour = 5;
-let message = '';
-
-if(currentHour >= 22){
-    message = 'nao deveriamos comer nada hoje';
-} 
-else if(currentHour >= 18 && currentHour < 22){
-    message = 'rango da noite vamos jantar';
+function horaAtual(currentHour){
+    if(currentHour >= 22){
+        return 'nao deveriamos comer nada hoje';
+    } 
+    else if(currentHour >= 18 && currentHour < 22){
+        return 'rango da noite vamos jantar';
+    }
+    else if(currentHour >= 14 && currentHour < 18){
+        return 'vamos fazer um bolo pro cafe da tarde';
+    }
+    else if(currentHour >= 11 && currentHour < 14){
+        return 'hora do almoço';
+    }
+    else if(currentHour >= 4 && currentHour < 11){
+        return 'hmm cheirinho de café';
+    };
 }
-else if(currentHour >= 14 && currentHour < 18){
-    message = 'vamos fazer um bolo pro cafe da tarde';
-}
-else if(currentHour >= 11 && currentHour < 14){
-    message = 'hora do almoço';
-}
-else if(currentHour >= 4 && currentHour < 11){
-    message = 'hmm cheirinho de café';
-};
-console.log(message)
+console.log(horaAtual(17));
 
 //exercicio switch/case
-let state = 'aprovada';
-switch(state){
-    case 'aprovada':
-        console.log('parabens');
-        break;
-
-    case 'reprovada':
-        console.log('reprovada inferlizmente');
-        break;
+function aprovedOrReproved(state){
+    switch(state){
+        case 'aprovada':
+            console.log('parabens');
+            break;
     
-    default:
-        console.log('lista de espera');
-};
-
-
+        case 'reprovada':
+            console.log('reprovada inferlizmente');
+            break;
+        
+        default:
+            console.log('lista de espera');
+    };
+    return state;
+}
+console.log(aprovedOrReproved())
 
 //exercicios sobre o bloco todo:
 //exercicio 1;
-const a = 12;
-const b = 234;
+let result;
+function sum(a,b){
+    result = a + b;
+    return result;
+}
+console.log(sum(89, 13));
 
-let soma = a + b;
-let subtracao = a - b;
-let multiplicacao = a * b;
-let divisao = a / b;
-let modulo = a % b;
-console.log(soma, subtracao, multiplicacao, divisao, modulo);
+function subtration(a,b){
+    result = a - b;
+    return result;
+}
+console.log(subtration(55,84));
+
+function multiplication(a,b){
+    result = a * b;
+    return result;
+}
+console.log(multiplication(15,9));
+
+function division(a,b){
+    result = a / b;
+    return result;
+}
+console.log(division(13,5));
+
+function module(a,b){
+    result = a % b;
+    return result;
+}
+console.log(module(13,55));
 
 //exercicio 2 programa que retorne o maior de dois numeros;
-const valor1 = 5613;
-const valor2 = 782727;
-let result;
-if(valor1 < valor2){
-    result = valor2;
+function returnHigherValue(value1, value2){
+    if(value1 < value2){
+        result = value2;
+        return result;
+    }
+    else{
+        result = value1;
+        return result;
+    };
 }
-else{
-    result = valor1;
-};
-console.log(result)
+console.log('o maior numero é ' + returnHigherValue(12356, 65489));
 
 //exercicio 3 programa que retorne o maior de 3 numeros
-const value1 = 150;
-const value2 = 250;
-const value3 = 350;
-let result2;
-if(value1 > value2 && value3 < value1){
-    result2 = value1;
+function returnHiggherValue(value1, value2, value3){
+    if(value1 > value2 && value3 < value1){
+        result2 = value1;
+        return result2
+    }
+    else if(value2 > value1 && value3 < value2){
+        result2 = value2;
+        return result2
+    }
+    else{
+        result2 = value3;
+        return result2
+    }
 }
-else if(value2 > value1 && value3 < value2){
-    result2 = value2;
-}
-else{
-    result2 = value3;
-}
-console.log(result2)
+console.log(returnHiggherValue(12,56,180));
 
 //exercicio 4 programa que retorna positivo se valor for positivo e negativo caso seja negativo;
-const defined = 45454545;
-let definedvalue;
-if(defined >= 0){
-    definedvalue = 'positivo';
+function returnPositive(defined){
+    if(defined >= 0){
+        definedvalue = 'positivo';
+        return definedvalue;
+    }
+    else if(defined < 0){
+        definedvalue = 'negativo';
+        return definedvalue;
+    }
+    else {
+        definedvalue = 'zero'
+        return definedvalue;
+    }
 }
-else if(defined < 0){
-    definedvalue = 'negativo';
-}
-else {
-    definedvalue = 'zero'
-}
-console.log(definedvalue)
+console.log(returnPositive(31));
 
 //exercicio 5 programa que define 3 constantes com valores dos tres angulos internos de um triangulo. Retorne true se os angulos representarem os angulos de um triangulo e false caso contrario. Se algum angulo for invalido o programa deve retornar uma mensagem de erro.
-const area1 = 60;
-const area2 = 60;
-const area3 = 60;
 let arearesult;
-if(area1 + area2 + area3 === 180){
-    arearesult = true;
+function returnTrueOrFalse(a,b,c){
+    if(a + b + c === 180){
+        arearesult = true;
+        return arearesult;
+    }
+    else{
+        arearesult = false;
+        return arearesult;
+    };
 }
-else{
-    arearesult = false;
-};
-console.log(arearesult);
+console.log(returnTrueOrFalse(60,30,60));
 
 //exercicio 6 escreva um programa que receba o nome da peça de xadrez e retorne os movimentos que ela faz.
 const bishop = 'diagonal';
