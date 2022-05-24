@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="teste">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="teste">Segundo parágrafo!</p>
+    </header>
+    <script>
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+
+      const pageTitle = document.getElementById('page-title')
+      pageTitle.innerText = 'Interestelar';
+
+      const secondParagraph = document.getElementById('second-paragraph');
+      secondParagraph.innerText = 'O filme interestelar na minha opnião, é muito bom e viajado, bom pra ver BEM alterado. Só isso.';
+      const subtitle = document.getElementById('subtitle')
+      subtitle.innerText = 'cebolote cocozote';
+
+      document.getElementsByClassName('teste')[1].style.color = 'green';
+
+      document.getElementsByTagName('h4')[0].style.color = 'blue';
+    </script>
+  </body>
+</html>
