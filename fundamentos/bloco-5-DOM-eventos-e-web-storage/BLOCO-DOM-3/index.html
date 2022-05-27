@@ -68,59 +68,80 @@
 
       let sectionMain = document.createElement('section');
       main.appendChild(sectionMain).className = 'center-content';
+      sectionMain.style.backgroundColor = 'green';
+      sectionMain.style.color = 'white'
 
       let p = document.createElement('p');
       sectionMain.appendChild(p).innerText = 'bom dia flor do dia';
 
       let sectionL = document.createElement('section');
       main.appendChild(sectionL).className = 'left-content';
+      main.removeChild(sectionL);
 
       let sectionR = document.createElement('section');
       main.appendChild(sectionR).className = 'right-content';
+      sectionR.style.marginRight = 'auto';
 
       let img = document.createElement('img');
       img.src = 'https://picsum.photos/200';
-      sectionL.appendChild(img).className = 'small-image'
+      sectionL.appendChild(img).className = 'small-image';
       
       let list = document.createElement('ul');
-      sectionR.appendChild(list)
+      sectionR.appendChild(list);
 
       let hzao3 = document.createElement('h3');
       main.appendChild(hzao3).innerText = 'ola, sou o hzao';
+      hzao3.className = 'description';
+
       let hzaozao3 = document.createElement('h3');
       main.appendChild(hzaozao3).innerText = 'e eu, sou o hzaozao';
+      hzaozao3.className = 'description';
+
       let hzaozaozao3 = document.createElement('h3');
       main.appendChild(hzaozaozao3).innerText ='e eu, sou o hzaozaozao';
+      hzaozaozao3.className = 'description';
 
       let listItems = document.createElement('li');
-      list.appendChild(listItems).innerText = 'um' 
+      list.appendChild(listItems).innerText = 'um';
+      listItems.style.textAlign = 'center';
 
       let listItems2 = document.createElement('li');
-      list.appendChild(listItems2).innerText = 'dois'
+      list.appendChild(listItems2).innerText = 'dois';
+      listItems2.style.textAlign = 'center';
 
       let listItems3 = document.createElement('li');
-      list.appendChild(listItems3).innerText = 'tres'
+      list.appendChild(listItems3).innerText = 'tres';
+      listItems3.style.textAlign = 'center';
 
       let listItems4 = document.createElement('li');
-      list.appendChild(listItems4).innerText = 'quatro'
+      list.appendChild(listItems4).innerText = 'quatro';
+      listItems4.style.textAlign = 'center';
 
       let listItems5 = document.createElement('li');
-      list.appendChild(listItems5).innerText = 'cinco'
+      list.appendChild(listItems5).innerText = 'cinco';
+      listItems5.style.textAlign = 'center';
 
       let listItems6 = document.createElement('li');
-      list.appendChild(listItems6).innerText = 'seis'
+      list.appendChild(listItems6).innerText = 'seis';
+      listItems6.style.textAlign = 'center';
 
       let listItems7 = document.createElement('li');
-      list.appendChild(listItems7).innerText = 'sete'
+      list.appendChild(listItems7).innerText = 'sete';
+      listItems7.style.textAlign = 'center';
 
       let listItems8 = document.createElement('li');
-      list.appendChild(listItems8).innerText = 'oito'
+      list.appendChild(listItems8).innerText = 'oito';
+      listItems8.style.textAlign = 'center';
 
       let listItems9 = document.createElement('li');
-      list.appendChild(listItems9).innerText = 'nove'
+      list.appendChild(listItems9).innerText = 'nove';
+      listItems9.style.textAlign = 'center';
+      list.removeChild(listItems9);
 
       let listItems10 = document.createElement('li');
-      list.appendChild(listItems10).innerText = 'dez'
+      list.appendChild(listItems10).innerText = 'dez';
+      listItems10.style.textAlign = 'center';
+      list.removeChild(listItems10);
 
 
     </script>
