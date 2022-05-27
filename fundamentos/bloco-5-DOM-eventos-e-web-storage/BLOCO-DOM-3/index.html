@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // COLOQUE SEU CÓDIGO AQUI
+      let corpo = document.querySelector('body');
+      let h1zin = document.createElement('h1');
+      corpo.appendChild(h1zin).textContent = 'Exercício 5.2 - JavaScript DOM';
+      h1zin.className = 'title';
+
+      let main = document.createElement('main');
+      corpo.appendChild(main).className = 'main-content';
+
+      let sectionMain = document.createElement('section');
+      main.appendChild(sectionMain).className = 'center-content';
+
+      let p = document.createElement('p');
+      sectionMain.appendChild(p).innerText = 'bom dia flor do dia';
+
+      let sectionL = document.createElement('section');
+      main.appendChild(sectionL).className = 'left-content';
+
+      let sectionR = document.createElement('section');
+      main.appendChild(sectionR).className = 'right-content';
+
+      let img = document.createElement('img');
+      img.src = 'https://picsum.photos/200';
+      sectionL.appendChild(img).className = 'small-image'
+      
+      let list = document.createElement('ul');
+      sectionR.appendChild(list)
+
+      let hzao3 = document.createElement('h3');
+      main.appendChild(hzao3).innerText = 'ola, sou o hzao';
+      let hzaozao3 = document.createElement('h3');
+      main.appendChild(hzaozao3).innerText = 'e eu, sou o hzaozao';
+      let hzaozaozao3 = document.createElement('h3');
+      main.appendChild(hzaozaozao3).innerText ='e eu, sou o hzaozaozao';
+
+      let listItems = document.createElement('li');
+      list.appendChild(listItems).innerText = 'um' 
+
+      let listItems2 = document.createElement('li');
+      list.appendChild(listItems2).innerText = 'dois'
+
+      let listItems3 = document.createElement('li');
+      list.appendChild(listItems3).innerText = 'tres'
+
+      let listItems4 = document.createElement('li');
+      list.appendChild(listItems4).innerText = 'quatro'
+
+      let listItems5 = document.createElement('li');
+      list.appendChild(listItems5).innerText = 'cinco'
+
+      let listItems6 = document.createElement('li');
+      list.appendChild(listItems6).innerText = 'seis'
+
+      let listItems7 = document.createElement('li');
+      list.appendChild(listItems7).innerText = 'sete'
+
+      let listItems8 = document.createElement('li');
+      list.appendChild(listItems8).innerText = 'oito'
+
+      let listItems9 = document.createElement('li');
+      list.appendChild(listItems9).innerText = 'nove'
+
+      let listItems10 = document.createElement('li');
+      list.appendChild(listItems10).innerText = 'dez'
+
+
+    </script>
+  </body>
+</html>
