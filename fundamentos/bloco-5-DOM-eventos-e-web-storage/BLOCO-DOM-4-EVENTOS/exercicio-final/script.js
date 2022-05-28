@@ -70,3 +70,22 @@ for(let index = 0; index < dezDaysList.length; index += 1){
     }
 
     
+    let sexta = 'Sexta-feira';
+    let botao2 = document.createElement('button');
+    botao2.innerText = sexta;
+    botao2.setAttribute('id', 'btn-holiday');
+    containerButtons.appendChild(botao2);
+
+    let sextasFeiras = document.querySelectorAll('.friday');
+    for(index = 0; index < sextasFeiras.length; index += 1){
+        let sextinha = sextasFeiras[index];
+        function clickBotao(){
+            sextinha.innerText = 'Sexta-feira';
+        }
+        botao2.addEventListener('click', clickBotao)
+    
+        function desclickBotao(){
+            
+        }
+        botao2.addEventListener('dblclick', desclickBotao)
+    }
