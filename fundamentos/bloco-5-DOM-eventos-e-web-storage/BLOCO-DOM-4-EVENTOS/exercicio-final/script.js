@@ -58,6 +58,8 @@ for(let index = 0; index < dezDaysList.length; index += 1){
     let diasHolidays = document.querySelectorAll('.holiday');
     for(index = 0; index < diasHolidays.length; index += 1){
         let thisDays = diasHolidays[index];
+
+        
         function clickBotao(){
             thisDays.style.backgroundColor = 'rgb(144,238,144)';
         }
@@ -77,14 +79,16 @@ for(let index = 0; index < dezDaysList.length; index += 1){
     containerButtons.appendChild(botao2);
 
     let sextasFeiras = document.querySelectorAll('.friday');
+
     for(index = 0; index < sextasFeiras.length; index += 1){
         let sextinha = sextasFeiras[index];
         function clickBotao(){
-            sextinha.innerText = 'Sexta-feira';
+            sextinha.innerText = 'Sexta-feira'
         }
         botao2.addEventListener('click', clickBotao)
     
         function desclickBotao(){
+            sextinha.textContent = sextasFeiras.textContent[0] = ['cebola'];
             
         }
         botao2.addEventListener('dblclick', desclickBotao)
