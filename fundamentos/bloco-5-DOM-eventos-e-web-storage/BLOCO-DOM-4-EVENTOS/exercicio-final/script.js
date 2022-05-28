@@ -33,7 +33,7 @@ for(let index = 0; index < dezDaysList.length; index += 1){
         liDays.className = 'day holiday'
     }
     else if(liDays.textContent == 25){
-        liDays.className = 'day holyday friday'
+        liDays.className = 'day holiday friday'
     }
     else if(liDays.textContent == 31){
         liDays.className = 'day holiday'
@@ -47,14 +47,26 @@ for(let index = 0; index < dezDaysList.length; index += 1){
     else if(liDays.textContent == 18){
         liDays.className = 'day friday'
     }
-
-    
 }
-
 
     let feriados = 'Feriados';
     let botao = document.createElement('button');
     botao.innerText = feriados;
     botao.setAttribute('id', 'btn-holiday');
     containerButtons.appendChild(botao);
+
+    let diasHolidays = document.querySelectorAll('.holiday');
+    for(index = 0; index < diasHolidays.length; index += 1){
+        let thisDays = diasHolidays[index];
+        function clickBotao(){
+            thisDays.style.backgroundColor = 'rgb(144,238,144)';
+        }
+        botao.addEventListener('click', clickBotao)
+    
+        function desclickBotao(){
+            thisDays.style.backgroundColor = 'rgb(238,238,238)'
+        }
+        botao.addEventListener('dblclick', desclickBotao)
+    }
+
     
