@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criando formulário completo</title>
+</head>
+<body>
+    <form action="">
+        <label for="nome-pessoa">Nome completo:
+            <input type="text" name="nome" id="nome-pessoa" placeholder="Digite seu nome" required>
+        </label>
+        <br>
+        <br>
+        <label for="email-pessoa">E-mail:
+            <input type="email" name="email" id="email-pessoa" placeholder="Digite seu nome" required>
+        </label>
+        <br>
+        <label for="senha-pessoa">Senha:
+            <input type="password" name="senha" id="senha-pessoa" placeholder="Digite sua senha" required>
+        </label>
+        <br>
+        <br>
+        <label for="estado">Selecione seu estado:
+            <select name="estado" id="estado">
+                <option value="pr" selected>Paraná</option>
+                <option value="am">Amapá</option>
+                <option value="sp">São Paulo</option>
+                <option value="rd">Rondônia</option>
+            </select>
+        </label>
+        <br>
+        <br>
+        <p>Selecione sua comida favorita:</p>
+        <label for="pizza">
+            <input type="radio" name="comida" id="pizza">Pizza
+        </label>
+        <label for="macarrao">
+            <input type="radio" name="comida" id="macarrao">Macarrão
+        </label>
+        <label for="hamburguer">
+            <input type="radio" name="comida" id="hamburguer" >Hamburguer
+        </label>
+        <label for="cenora">
+            <input type="radio" name="comida" id="cenora">Cenoura
+        </label>
+        <br>
+        <br>
+        <label for="fotinha">
+            <input type="file" name="foto" id="fotinha">
+        </label>
+        <br>
+        <br>
+        <p>Fale um pouco sobre voce:</p>
+        <label for="sobre-voce">
+            <textarea name="sobre" id="sobre-voce" cols="30" rows="5" placeholder="Fale de você"></textarea>
+        </label>
+        <br>
+        <label for="promotions"> 
+            <input type="checkbox" name="promocoes" id="promotions">Gostaria de receber promoções da nossa loja ?
+        </label>
+        <br>
+        <label for="botao">
+            <input type="submit" name="botao" id="botao" >
+        </label>
+
+    </form>
+</body>
+</html>
