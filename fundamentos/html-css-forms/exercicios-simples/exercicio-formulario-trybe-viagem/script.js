@@ -8,10 +8,8 @@ let nomeCompleto = document.querySelector('#input-name')
 
 function alerta(){
     if(nomeCompleto.textContent < 10){
-    window.alert('Dados Inválidos');
-}   else{
-    window.alert('Dados enviados com sucesso! Obrigado por participar <3')
-}
+    window.alert('escreve direito burro(a)');
+}   
     
 
     }
