@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario de viagem trybe</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="input-name">Nome completo:
+            <br>
+            <input type="text" name="nome" id="input-name" minlength="10" maxlength="40" required>
+        </label>
+
+        <br>
+
+        <label for="input-email">E-mail:
+            <br>
+            <input type="email" name="email" id="input-email" minlength="10" maxlength="50" required>
+        </label>
+
+        <br>
+        <br>
+
+        <label for="input-destino">Destino preferido:</label>
+        <label for="input-destino1">
+            <input type="radio" name="destino" id="input-destino1">Cidade
+        </label>
+        <label for="input-destino2">
+            <input type="radio" name="destino" id="input-destino2">Campo
+        </label>
+        <label for="input-destino3">
+            <input type="radio" name="destino" id="input-destino3">Montanha
+        </label>
+        <label for="input-destino4">
+            <input type="radio" name="destino" id="input-destino4">Praia
+        </label>
+
+            <br>
+            <br>
+
+            <p>Por que voce deveria ganhar essa viagem?</p>
+        <label for="text-area">
+            <textarea name="seu-momento" id="text-area" cols="30" rows="10" maxlength="500"></textarea>
+        </label>
+
+        <br>
+        <br>
+
+        <p>Qual seria a melhor data para viagem ?</p>
+        <label for="select-date">Dia:
+            <select name="data" id="select-date">
+                <option value="dia-04-10">dia 04 a 10</option>
+                <option value="dia-11-16">dia 11 a 16 </option>
+                <option value="dia-17-22">dia 17 a 22</option>
+                <option value="dia-23-30">dia 23 a 30</option>
+            </select>
+        </label>
+
+        <label for="select-date">Mês:
+            <select name="data" id="select-date">
+                <option value="mes1">mes 1</option>
+                <option value="mes2">mes 2</option>
+                <option value="mes3">mes 3</option>
+                <option value="mes4">mes 4</option>
+                <option value="mes5">mes 5</option>
+                <option value="mes6">mes 6</option>
+                <option value="mes7">mes 7</option>
+                <option value="mes8">mes 8</option>
+                <option value="mes9">mes 9</option>
+                <option value="mes10">mes 10</option>
+                <option value="mes11">mes 11</option>
+                <option value="mes12">mes 12</option>
+            </select>
+        </label>
+
+        <br>
+        <br>
+
+        <label for="checkbox-viagem">
+            <input type="checkbox" name="mais-viagens" id="checkbox-viagem">Gostaria de receber mais oportunidades de viagens ?
+        </label>
+        <br>
+        <label for="checkbox-termo">
+            <input type="checkbox" name="termo" id="checkbox-termo" required>Concordo que minhas fotos poderam ser usadas
+        </label>
+
+        <br>
+
+        <button type="submit" id="botao-submit">Enviar</button>
+        <button type="reset" id="botao-reset">Limpar</button>
+
+    </form>
+</body>
+<script src="script.js"></script>
+</html>
