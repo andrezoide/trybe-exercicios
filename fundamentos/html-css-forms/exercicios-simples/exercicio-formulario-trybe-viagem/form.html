@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>formulario de viagem trybe</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+
+
 </head>
+
 <body>
-    <h1>FORMULARIO DA BRIGA</h1>
+    <h1 class="display-4 text-muted">FORMULARIO DA BRIGA</h1>
     <form action="" method="get">
-        <label for="input-name">Nome de quem ta PUTO
-            <br>
-            <input type="text" name="nome" id="input-name" minlength="10" maxlength="40" required>
-        </label>
-
+        <div class="form-group">
+            <label for="input-name">Nome de quem ta PUTO
+                <br>
+                <input class="form-control" type="text" name="nome" id="input-name" minlength="10" maxlength="40" required>
+            </label>
+        </div>
         <br>
         <br>
-
-        <label for="input-email">E-mail (mentira nem precisa)
-            <br>
-            <input type="email" name="email" id="input-email" minlength="10" maxlength="50" >
-        </label>
-
+        <div class="form-group">
+            <label for="input-email">E-mail (mentira nem precisa)
+                <br>
+                <input class="form-control" type="email" name="email" id="input-email" minlength="10" maxlength="50">
+            </label>
+        </div>
         <br>
         <br>
-
-        <label for="input-destino">Nivel de putidão:</label>
-        <label for="input-destino1">
-            <input type="radio" name="destino" id="input-destino1">manço
-        </label>
-        <label for="input-destino2">
-            <input type="radio" name="destino" id="input-destino2">pistolinha
-        </label>
-        <label for="input-destino3">
-            <input type="radio" name="destino" id="input-destino3">ta de sacanagem
-        </label>
-        <label for="input-destino4">
-            <input type="radio" name="destino" id="input-destino4">"to normal"
-        </label>
-
-            <br>
-            <br>
-
+        <div>
+            <label for="input-destino">Nivel de putidão:</label>
+            <label for="input-destino1">
+                <input type="radio" name="destino" id="input-destino1">manço
+            </label>
+            <label for="input-destino2">
+                <input type="radio" name="destino" id="input-destino2">pistolinha
+            </label>
+            <label for="input-destino3">
+                <input type="radio" name="destino" id="input-destino3">ta de sacanagem
+            </label>
+            <label for="input-destino4">
+                <input type="radio" name="destino" id="input-destino4">"to normal"
+            </label>
+        </div>
+        <br>
+        <br>
+        <div>
             <p>Motivo de estar puto(a):</p>
-        <label for="text-area">
-            <textarea name="seu-momento" id="text-area" cols="30" rows="10" maxlength="500"></textarea>
-        </label>
-
+            <label for="text-area">
+                <textarea class="form-control" name="seu-momento" id="text-area" cols="30" rows="10" maxlength="500"></textarea>
+            </label>
+        </div>
         <br>
         <br>
+        <div>
+            <p>Qual sua vontade agora ?</p>
+            <label for="select-date">
+                <select class="form-control" name="data" id="select-date">
+                    <option value="dia-04-10">surrar</option>
+                    <option value="dia-11-16">dar abracinho </option>
+                    <option value="dia-17-22">dar beijinho</option>
+                    <option value="dia-23-30">dar chameguinho</option>
+                    <option value="dia-23-30">fazer um SEXO VALENTE</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label for="select-date">
+                <select class="form-control" name="data" id="select-date">
+                    <option value="mes1">com pedaço de pau</option>
+                    <option value="mes2">com muito chamego</option>
+                    <option value="mes3">com um baseadão</option>
+                    <option value="mes4">com um maçarico</option>
+                    <option value="mes5">com uma goiaba</option>
 
-        <p>Qual sua vontade agora ?</p>
-        <label for="select-date">
-            <select name="data" id="select-date">
-                <option value="dia-04-10">surrar</option>
-                <option value="dia-11-16">dar abracinho </option>
-                <option value="dia-17-22">dar beijinho</option>
-                <option value="dia-23-30">dar chameguinho</option>
-                <option value="dia-23-30">fazer um SEXO VALENTE</option>
-            </select>
-        </label>
-
-        <label for="select-date">
-            <select name="data" id="select-date">
-                <option value="mes1">com pedaço de pau</option>
-                <option value="mes2">com muito chamego</option>
-                <option value="mes3">com um baseadão</option>
-                <option value="mes4">com um maçarico</option>
-                <option value="mes5">com uma goiaba</option>
-                
-            </select>
-        </label>
-
+                </select>
+            </label>
+        </div>
         <br>
         <br>
+        <div>
 
-        <label for="checkbox-viagem">
-            <input type="checkbox" name="mais-viagens" id="checkbox-viagem">Concordo que cada palavra dita a cima é verdade
-        </label>
+            <label for="checkbox-viagem">
+                <input type="checkbox" name="mais-viagens" id="checkbox-viagem">Concordo que cada palavra dita a cima é
+                verdade
+            </label>
+        </div>
         <br>
-        <label for="checkbox-termo">
-            <input type="checkbox" name="termo" id="checkbox-termo" required>Gostaria da possibilidade de reconciliação imediata ?
-        </label>
-
+        <div>
+            <label for="checkbox-termo">
+                <input type="checkbox" name="termo" id="checkbox-termo" required>Gostaria da possibilidade de
+                reconciliação
+                imediata ?
+            </label>
+        </div>
         <br>
-
-        <button type="submit" id="botao-submit">Enviar para analise</button>
-        <button type="reset" id="botao-reset">Limpar tudo</button>
-
+        <div>
+            <button class="btn btn-sucess" type="submit" id="botao-submit">Enviar para analise</button>
+            <button class="btn btn-sucess" type="reset" id="botao-reset">Limpar tudo</button>
+        </div>
     </form>
 </body>
+<script src="//cdn.rawgit.com/namuol/cheet.js/master/cheet.min.js" type="text/javascript"></script>
 <script src="script.js"></script>
+
 </html>
