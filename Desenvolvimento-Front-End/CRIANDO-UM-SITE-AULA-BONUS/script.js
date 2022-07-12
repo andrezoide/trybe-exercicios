@@ -1,5 +1,11 @@
 window.onload = () => {
     setupHtmlElements();
+
+    //exemplo localstorage:
+    //if(eu tiver cache){
+    //recupera o caches
+    //renderRate(baseado no meu cache)
+    //}
 };
 
 const setupHtmlElements = () => {
